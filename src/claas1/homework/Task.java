@@ -20,7 +20,9 @@ public class Task {
 
 
         driver.get("https://www.amazon.com/");
+        //or
         driver.navigate().to("https://www.amazon.com/");
+
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
         driver.close();
