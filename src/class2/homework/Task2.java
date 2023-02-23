@@ -30,7 +30,11 @@ public class Task2 {
         driver.findElement(By.name("lastname")).sendKeys("Mehraban");
         driver.findElement(By.name("reg_email__")).sendKeys("Gulam Ali.Mehrabani@gmail.com");
         driver.findElement(By.name("reg_passwd__")).sendKeys("1234");
-        
+        driver.findElement(By.name("reg_email_confirmation__")).sendKeys("Gulam Ali.Mehrabani@gmail.com");
+        driver.findElement(By.name("websubmit")).click();
+
+        Thread.sleep(3000);
+
         driver.close();
 
 
