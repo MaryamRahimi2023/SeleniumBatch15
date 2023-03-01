@@ -15,7 +15,7 @@ public class Task2 {
      close the browser
      TIP for HW2:
      just fill in text boxes or button, no need to deal with other webElements
-     also u will need a Thread.sleep after clcikng on create new account 🙂
+     also u will need a Thread.sleep after clicking on create new account 🙂
      we will discuss "WHY" in future
      */
     public static void main(String[] args) throws InterruptedException {
@@ -32,6 +32,8 @@ public class Task2 {
         driver.findElement(By.name("reg_passwd__")).sendKeys("1234");
         driver.findElement(By.name("reg_email_confirmation__")).sendKeys("Gulam Ali.Mehrabani@gmail.com");
         driver.findElement(By.name("websubmit")).click();
+        
+       // driver.findElement(By.id("u_2_9_ro")).click();
 
         Thread.sleep(3000);
 
