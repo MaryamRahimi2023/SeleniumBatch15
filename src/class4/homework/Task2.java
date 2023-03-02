@@ -24,15 +24,16 @@ public class Task2 {
 
        List<WebElement> checkBoxes= driver.findElements(By.cssSelector("input[class='cb1-element']"));
 
-       String optionToSelect="Option-3";
-
+       String optionToSelect="Option-2";// we can change "Option-2" to any other value to select a different checkbox
         for (WebElement checkBox : checkBoxes) {
-            String optionBox = checkBox.getAttribute("value");
+            String optionBox=checkBox.getAttribute("value");
             System.out.println(optionBox);// Option-1, Option-2, Option-3, Option-4
-            if (optionBox.equalsIgnoreCase(optionToSelect)) {
+            if(optionBox.equalsIgnoreCase(optionToSelect)){
                 checkBox.click();
             }
 
+
         }
+
     }
 }
