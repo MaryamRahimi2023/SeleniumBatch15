@@ -26,8 +26,9 @@ public class radioButtons {
             System.out.println(radioButton.getAttribute("value"));// 0 - 5 , 5 - 15,15 - 50
 
            String age= radioButton.getAttribute("value");
-           if(age.equalsIgnoreCase("10 - 15"));
-           radioButton.click();
+           if(age.equalsIgnoreCase("0 - 5")) {
+               radioButton.click();
+           }
 
         }
         // also we can create an array to check if all te buttons are clickable
