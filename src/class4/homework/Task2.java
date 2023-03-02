@@ -31,6 +31,7 @@ public class Task2 {
             if(optionBox.equalsIgnoreCase(optionToSelect)){
                 checkBox.click();
             }
+            driver.quit();
 
 
         }
