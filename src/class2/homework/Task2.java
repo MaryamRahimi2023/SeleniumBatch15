@@ -37,7 +37,7 @@ public class Task2 {
 
         Thread.sleep(3000);
 
-        driver.close();
+      //  driver.close();
 
 
 

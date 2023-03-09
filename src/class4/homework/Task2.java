@@ -23,7 +23,9 @@ public class Task2 {
         driver.manage().window().maximize();
 
        List<WebElement> checkBoxes= driver.findElements(By.cssSelector("input[class='cb1-element']"));
-
+//                      this is a list of elements we can not say checkBoxes.click();
+       // for (int i = 0; i <checkBoxes.size() ; i++) {
+        // checkBoxes.get(i);}
 
         for (WebElement checkBox : checkBoxes) {
             System.out.println(checkBox.getAttribute("value"));// Option-1, Option-2, Option-3, Option-4
@@ -35,6 +37,20 @@ public class Task2 {
         }
         Thread.sleep(1000);
        driver.quit();
+
+        //iterate through the list with normal for loop
+        for (int i=0;i<checkBoxes.size();i++){
+
+            String value = checkBoxes.get(i).getAttribute("value");
+//                check if this is the desired one
+//                if yes click it
+//                if no continue to iterate
+            if(value.equalsIgnoreCase("Option-2")){
+                checkBoxes.get(i).click();
+            }
+
+        }
+
 
     }
 }

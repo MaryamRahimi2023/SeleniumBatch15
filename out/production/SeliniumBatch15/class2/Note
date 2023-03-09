@@ -4,6 +4,9 @@ e.g. buttons, textboxes, checkboxes, links
 
 HTML?
 HyperText Markup Language
+It is a markup language used for creating and structuring web pages and applications.
+HTML uses various tags and attributes to define the structure and content of a web page,
+such as text, images, links, and multimedia elements.
 
 What is DOM?
 DOM stands for Document Object Model. It is the browser's
