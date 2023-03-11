@@ -26,14 +26,14 @@ public class Task2 {
         driver.manage().window().maximize();
         driver.findElement(By.linkText("Create new account")).click();
         Thread.sleep(3000);
-        driver.findElement(By.name("firstname")).sendKeys("Gulam Ali");
-        driver.findElement(By.name("lastname")).sendKeys("Mehraban");
-        driver.findElement(By.name("reg_email__")).sendKeys("Gulam Ali.Mehrabani@gmail.com");
+        driver.findElement(By.name("firstname")).sendKeys("Ali");
+        driver.findElement(By.name("lastname")).sendKeys("Danish");
+        driver.findElement(By.name("reg_email__")).sendKeys("Ali.Danish@gmail.com");
         driver.findElement(By.name("reg_passwd__")).sendKeys("1234");
-        driver.findElement(By.name("reg_email_confirmation__")).sendKeys("Gulam Ali.Mehrabani@gmail.com");
+        driver.findElement(By.name("reg_email_confirmation__")).sendKeys("Ali.Danish@gmail.com");
         driver.findElement(By.name("websubmit")).click();
         
-       // driver.findElement(By.id("u_2_9_ro")).click();
+       // driver.findElement(By.id("u_2_9_6s")).click();
 
         Thread.sleep(3000);
 

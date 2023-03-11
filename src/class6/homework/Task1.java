@@ -34,6 +34,8 @@ public class Task1 {
 
         WebElement text=driver.findElement(By.xpath("//h4[text()='Hello World!']"));
 
+        System.out.println(text.isDisplayed());
+
         System.out.println("The displayed text is "+text.getText()); // The displayed text is Hello World!
 
 

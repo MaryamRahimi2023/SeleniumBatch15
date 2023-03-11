@@ -26,11 +26,12 @@ public class Task2 {
         driver.switchTo().frame("mce_0_ifr");
         WebElement text=driver.findElement(By.xpath("//p"));
         text.clear();
+
         text.sendKeys("Hello World!");
 
         driver.switchTo().defaultContent();
 
-        driver.close();
+        //driver.close();
 
     }
 }
