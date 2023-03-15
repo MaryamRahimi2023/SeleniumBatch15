@@ -2,7 +2,10 @@ package class2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
 
 public class tagName {
 
@@ -19,7 +22,10 @@ public class tagName {
 
         // print all the links in the amazon.com
 
-        driver.findElements(By.tagName("a"));
+        List<WebElement> links= driver.findElements(By.tagName("a"));
+        for (WebElement link : links) {
+            System.out.println(link);
+        }
 
     }
 }

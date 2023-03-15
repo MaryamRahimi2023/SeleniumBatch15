@@ -34,10 +34,6 @@ locators in selenium :
 								hey get me the tag "input" which has an attribute name whose value is "abra";
 
 
-
-
-
-
 	b.Syntax for xpath (finding by text):
 									//tagname[text()='text value']
 
@@ -49,13 +45,11 @@ locators in selenium :
 										our html code (webelement) must have text.
 										****Example:****
 
-									<button id="tro", class="fyo"> heelo </button>
+									<button id="tro", class="fyo"> hello </button>
 									answer:
-										//button[text()='heelo']
+										//button[text()='hello']
 
-
-
-	c.Syntax for xpath (finding by contains method):
+c.Syntax for xpath (finding by contains method):
 
 							for tagname
 
@@ -63,11 +57,11 @@ locators in selenium :
 
 								translation :
 
-								get me the tag name which has an attibute whose value contains "partial value of the attribute"
+								get me the tag name which has an attribute whose value contains "partial value of the attribute"
 
 
                                       ******Example**********
-                              <input email= "how are you i am fine , thankyou" id="dsfs"/>
+                              <input email= "how are you i am fine , thank you" id="dsfs"/>
 
                                xpath using contains method:
 
@@ -83,9 +77,9 @@ locators in selenium :
 
 
 
-conatins can be used in a scenario where
+contains can be used in a scenario where
 1.the attribute or text is very long
-2.when part of the value or text is dynamic
+2.when part of the value or text is dynamic/ like days of the wek and day is dynamic for all texts
 
 
 --------------------------------------------------------------------------------------------------------------------------
@@ -136,6 +130,9 @@ absolute xpath refers to the exact pin point of the location of the element
 but it is usually avoided, not much used in the industry.
 as a little change in dom can change that location.
 
+specifying the location of an element on a web page based on its complete path from the root node of the HTML document.
+It starts with a single forward slash (/) and traverses through each of the parent elements until it reaches the target element.
+Absolute Xpath [/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input]
 
 
 <html>

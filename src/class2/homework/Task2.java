@@ -33,7 +33,7 @@ public class Task2 {
         driver.findElement(By.name("reg_email_confirmation__")).sendKeys("Ali.Danish@gmail.com");
         driver.findElement(By.name("websubmit")).click();
         
-       // driver.findElement(By.id("u_2_9_6s")).click();
+        driver.findElement(By.xpath("//img[@src='https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/zgulV2zGm8t.png']")).click();
 
         Thread.sleep(3000);
 
