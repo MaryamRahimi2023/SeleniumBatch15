@@ -20,5 +20,9 @@ public class Task1 {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='Selenium Webdriver']")));
         WebElement text= driver.findElement(By.xpath("//h2[text()='Selenium Webdriver']"));
         System.out.println(text.getText());// Selenium Webdriver
+
+        boolean isTextChanged=wait.until(ExpectedConditions.textToBe(By.id("h2"),"Selenium Webdriver"));
+        System.out.println(isTextChanged);
     }
+
 }

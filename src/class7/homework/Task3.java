@@ -19,8 +19,9 @@ public class Task3 {
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//button[@id='enable-button']")).click();
         WebDriverWait wait=new WebDriverWait(driver,20);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='disable']")));
         WebElement disableBtn=driver.findElement(By.xpath("//button[@id='disable']"));
+        wait.until(ExpectedConditions.elementToBeClickable(disableBtn));
         System.out.println(disableBtn.isEnabled());// true
+
     }
 }

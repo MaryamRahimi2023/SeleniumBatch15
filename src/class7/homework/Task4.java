@@ -17,9 +17,12 @@ public class Task4 {
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//button[@id='checkbox']")).click();
         WebDriverWait wait=new WebDriverWait(driver,20);
-        wait.until(ExpectedConditions.elementToBeSelected(By.xpath("//input[@type='checkbox']")));
         WebElement checkBox= driver.findElement(By.xpath("//input[@type='checkbox']"));
+        wait.until(ExpectedConditions.elementToBeSelected(checkBox));
         System.out.println(checkBox.isSelected());//true
+
+        /* This method will work as well wait.until(ExpectedConditions.elementSelectionStateToBe(checkBox,true));;
+                                         System.out.println(checkBox.isSelected());//true*/
 
     }
 }

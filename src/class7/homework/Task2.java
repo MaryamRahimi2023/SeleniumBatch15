@@ -20,5 +20,9 @@ public class Task2 {
         WebElement displayBtn=driver.findElement(By.xpath("//button[text()='Enabled']"));
         System.out.println(displayBtn.isDisplayed());// true
 
+
+       /* also we can use this method wait.until(ExpectedConditions.visibilityOf(displayBtn));
+                                      System.out.println(displayBtn.isDisplayed());// true */
+
     }
 }
