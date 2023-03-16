@@ -20,7 +20,7 @@ public class ExplicitWait {
 //        goto syntax projects.com
         driver.get("http://practice.syntaxtechs.net/dynamic-elements-loading.php");
 
-//        click on the stsrt button
+//        click on the start button
           driver.findElement(By.xpath("//button[@id='startButton']")).click();
 //         as the element that contains text becomes visible after some
 //        time, so first we need to implement the Explicit wait and then get the text
@@ -36,6 +36,7 @@ public class ExplicitWait {
         WebElement text = driver.findElement(By.xpath("//h4[text()='Welcome Syntax Technologies']"));
         String WelcomeText = text.getText();
         System.out.println(WelcomeText);
+        driver.close();
 
 
 

@@ -20,7 +20,7 @@ public class Task1 {
         make sure that ur code is dynamic i.e
         changing the id doesnt effect the logic or xpath
         */
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
 
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -43,6 +43,7 @@ public class Task1 {
                WebElement checkBox=driver.findElement(By.xpath("//table[@class='table hover']/tbody/tr["+ (i + 1) +"]/td[1]/input"));
                checkBox.click();
                System.out.println(checkBox.isSelected());// true
+               driver.close();
            }
         }
 
